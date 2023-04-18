@@ -26,7 +26,7 @@ Also, we have $4$ models here:
 
 Then: 
 
-1. We first transform ```/raid/VSC/data/test/reference/``` into images using ```ff``` by:
+1. We first transform ```/raid/VSC/data/test/reference/``` into images using ```ffmpeg``` by:
 
 ```
 bash video2images_ref_ff.sh
