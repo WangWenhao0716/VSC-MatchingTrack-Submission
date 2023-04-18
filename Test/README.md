@@ -41,7 +41,7 @@ bash vit_train_ref.sh
 bash t2t_train_ref.sh
 bash 50SK_train_ref.sh
 ```
-
+Finally, by running ```python hdf5_to_npz_train.py```, you can get the test reference features (```reference_v1_sort_train.npz```) in each folder.
 
 
 3. Get the test reference features:
@@ -52,5 +52,5 @@ bash vit_test_ref.sh
 bash t2t_test_ref.sh
 bash 50SK_test_ref.sh
 ```
-Finally, by running ```python hdf5_to_npz_test.py```, you can get the test reference features in each folder.
+Finally, by running ```python hdf5_to_npz_test.py```, you can get the test reference features (```reference_v1_sort_test.npz```) in each folder.
 
