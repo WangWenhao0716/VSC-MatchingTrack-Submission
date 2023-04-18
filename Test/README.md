@@ -45,35 +45,11 @@ bash 50SK_train_ref.sh
 
 3. Get the test reference features:
 
-We first delete the black images:
-
-(1) Generate pad images:
-```
-bash black_pad_reference_test_dist.sh
-```
-(2) Use yolov5 to detect:
-
-Download ```deblack_20230107.pt``` from [Google Drive](https://drive.google.com/file/d/1Nn6xXh1I9Fp0hUpHjGEqeikCa8Wkzgif/view?usp=share_link).
-```
-CUDA_VISIBLE_DEVICES=0 python detect.py \
---source /raid/VSC/data/test/reference_one_second_imageio_v3_pad/ \
---weights deblack_20230107.pt --conf 0.1 
-```
-(3) Get final images:
-```
-python generate_deblack_reference_test.py
-```
-
-Then:
-
 ```
 bash swin_test_ref.sh
 bash vit_test_ref.sh
 bash t2t_test_ref.sh
-bash 50_test_ref.sh
-bash 50X_test_ref.sh
 bash 50SK_test_ref.sh
-python agg_test_ref.py
 ```
-You will get ```reference_descriptors.npz``` in the submission file.
+
 
