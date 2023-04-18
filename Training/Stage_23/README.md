@@ -34,8 +34,6 @@ loss = loss_ce + loss_ce_1 + loss_ce_small + loss_ce_small_1 + 100 * loss_sp + 2
 before the training of CNN-based methods.
 
 ```
-bash train_50.sh
-bash train_50X.sh
 bash train_50SK.sh
 ```
 
@@ -45,21 +43,15 @@ bash train_50SK.sh
 python clean_swin.py
 python clean_vit.py
 python clean_t2t.py
-python clean_50.py
-python clean_50X.py
 python clean_50SK.py
 ```
 
 ## Conclusion:
 Finally, we will get $6$ models for test:
-1. ```train_v1_swin_s3_512_twolosses_com_L2_norm_100_all_tune_bw_gt_ng_1_cls_resize_FIN.pth.tar```
+1. ```train_v1_swin_s3_512_twolosses_com_L2_norm_100_all_tune_bw_gt_ng_1_cls_FIN.pth.tar```
 
-2. ```train_v1_vit_s3_512_twolosses_com_L2_norm_100_all_tune_bw_gt_ng_1_cls_resize_FIN.pth.tar```
+2. ```train_v1_vit_s3_512_twolosses_com_L2_norm_100_all_tune_bw_gt_ng_1_cls_FIN.pth.tar```
 
-3. ```train_v1_t2t_s3_512_twolosses_com_L2_norm_100_all_tune_bw_gt_ng_1_cls_resize_FIN.pth.tar```
+3. ```train_v1_t2t_s3_512_twolosses_com_L2_norm_100_all_tune_bw_gt_ng_1_cls_FIN.pth.tar```
 
-4. ```train_v1_50_s3_512_twolosses_com_L2_norm_100_all_tune_bw_gt_ng_2_cls_FIN.pth.tar```
-
-5. ```train_v1_50X_s3_512_twolosses_com_L2_norm_100_all_tune_bw_gt_ng_2_cls_FIN.pth.tar```
-
-6. ```train_v1_50SK_s3_512_twolosses_com_L2_norm_100_all_tune_bw_gt_ng_2_cls_FIN.pth.tar```
+4. ```train_v1_50SK_s3_512_twolosses_com_L2_norm_100_all_tune_bw_gt_ng_2_cls_FIN.pth.tar```
