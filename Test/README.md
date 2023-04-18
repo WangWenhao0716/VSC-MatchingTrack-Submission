@@ -39,15 +39,9 @@ Note we have transformed the ```/raid/VSC/data/train/reference/``` into images i
 bash swin_train_ref.sh
 bash vit_train_ref.sh
 bash t2t_train_ref.sh
-bash 50_train_ref.sh
-bash 50X_train_ref.sh
 bash 50SK_train_ref.sh
 ```
-Then:
-```
-python agg_train_ref.py
-```
-You will get ```ensemble_6_t_512_crop_rotate_bw_gt_ng_1_cls_FIN.hdf5``` in the submission file.
+
 
 3. Get the test reference features:
 
