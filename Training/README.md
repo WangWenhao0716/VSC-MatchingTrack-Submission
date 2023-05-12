@@ -10,7 +10,7 @@ We first use transformations to generate training images in an offline manner. P
 
 We train our models in three stages. Please go to the ```Stage_1``` and ```Stage_23```, sequentially.
 
-Finally, we get $3$ trained models for the test.
+Finally, we get $4$ trained models for the test.
 
 
 
