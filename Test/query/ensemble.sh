@@ -1,0 +1,5 @@
+CUDA_VISIBLE_DEVICES=0 conda run --no-capture-output -n condaenv python -m vsc.baseline.sscd_baseline_ens \
+    --query_features ./feature/train_v1_{swin,vit,t2t}_s3_512_twolosses_com_L2_norm_100_all_tune_bw_gt_ng_1_cls_FIN/query_v1_rotate_detection_v3_all_sort_3.npz ./feature/train_v1_50SK_s3_512_twolosses_com_L2_norm_100_all_tune_bw_gt_ng_2_cls_FIN/query_v1_rotate_detection_v3_all_sort_3.npz \
+    --ref_features ./feature/train_v1_{swin,vit,t2t}_s3_512_twolosses_com_L2_norm_100_all_tune_bw_gt_ng_1_cls_FIN/reference_v1_sort_test.npz ./feature/train_v1_50SK_s3_512_twolosses_com_L2_norm_100_all_tune_bw_gt_ng_2_cls_FIN/reference_v1_sort_test.npz \
+    --score_norm_features ./feature/train_v1_{swin,vit,t2t}_s3_512_twolosses_com_L2_norm_100_all_tune_bw_gt_ng_1_cls_FIN/reference_v1_sort_train.npz ./feature/train_v1_50SK_s3_512_twolosses_com_L2_norm_100_all_tune_bw_gt_ng_2_cls_FIN/reference_v1_sort_train.npz \
+    --output_path ./output/ --overwrite
