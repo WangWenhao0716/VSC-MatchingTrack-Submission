@@ -1,0 +1,2 @@
+rm -rf train_v1_{swin,vit,t2t}_s3_512_twolosses_com_L2_norm_100_all_tune_bw_gt_ng_1_cls_FIN/query*
+rm -rf train_v1_50SK_s3_512_twolosses_com_L2_norm_100_all_tune_bw_gt_ng_2_cls_FIN/query*
