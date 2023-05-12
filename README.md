@@ -1,4 +1,4 @@
-# VSC-MatchingTrack-Submission
+# VSC-MatchingTrack-Submission ($2^{nd}$ Solution)
 The codes and related files to reproduce the results for [Video Similarity Challenge Matching Track](https://www.drivendata.org/competitions/106/meta-video-similarity-matching/) (CVPR2023).
 
 ## Required dependencies
